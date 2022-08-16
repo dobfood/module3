@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "i": "^0.3.7",
+    "nodemon": "^2.0.19",
+    "qs": "^6.11.0"
+  },
+  "scripts": {
+    "dev": "nodemon seve.js"
+  }
+}
