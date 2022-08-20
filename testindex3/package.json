@@ -1,0 +1,12 @@
+{
+  "main": "main.js",
+  "dependencies": {
+    "init": "^0.1.2",
+    "qs": "^6.11.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node main.js"
+  },
+  "license": "ISC"
+}

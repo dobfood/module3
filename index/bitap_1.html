@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+</head>
+<body>
+    <input type="number" id="num" value="">
+    <button onclick="slowdown()">Nhap vao em</button>
+<!--    <div id="time-countdown"></div>-->
+<script>
+    function time(number) {
+        return new Promise((resolve) =>
+            setTimeout(resolve, number))
+    }
+    async function slowdown() {
+
+        let input = document.getElementById("num");
+
+        // let div = document.getElementById("time-countdown")
+        while (input >= 0) {
+
+            input--;
+            await time(2000)
+        }
+        return "Finsh"
+    }
+    let counter = slowdown()
+    counter.then((result) => {
+        document.getElementById('num').innerHTML = result
+    })
+</script>
+</body>
+</html>
